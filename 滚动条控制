@@ -1,0 +1,39 @@
+<html>
+<title></title>
+<script type="text/javascript">
+var timer;
+var currentTop;
+function GoDown(){
+   currentTop=document.documentElement.scrollTop||document.body.scrollTop;
+   var he=document.body.scrollHeight;
+    currentTop++;
+   if(currentTop<he){
+   window.scrollTo(0,currentTop); 
+   }
+   else clearInterval(timer);
+}
+
+function Go(){
+   timer=setInterval("GoDown()",1);
+}
+
+function NoGo(){
+   clearInterval(timer);
+}
+
+</script>
+
+<body>
+<p style="height:600px;">11111</p>
+ <p>11111</p>
+ <p>11111</p>
+ <p>11111</p><p>11111</p>
+ <p>11111</p><p>11111</p><p>11111</p>
+ <input type="button" value="下" onmouseout="NoGo()" onmouseover="Go()" style="position:fixed;right:0px; top:350px;"></input>
+ <p>11111</p><p>11111</p>
+ <p>11111</p>
+ <p>11111</p>
+ <p>11111</p>
+ <p>11111</p><p>11111</p>
+</body>
+</html>

@@ -75,7 +75,7 @@
                                 cxt.stroke();
                         }
         }
-   window.setInterval("draw_watch()",1000);
+   //window.setInterval("draw_watch()",1000);
    
    </script>
  </body>
